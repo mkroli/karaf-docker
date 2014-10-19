@@ -2,10 +2,10 @@ FROM dockerfile/java
 MAINTAINER mkroli
 ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
 
-RUN wget http://apache.openmirror.de/karaf/3.0.2/apache-karaf-3.0.2.tar.gz; \
+RUN wget http://apache.openmirror.de/karaf/2.4.0/apache-karaf-2.4.0.tar.gz; \
     mkdir /opt/karaf; \
-    tar --strip-components=1 -C /opt/karaf -xzf apache-karaf-3.0.2.tar.gz; \
-    rm apache-karaf-3.0.2.tar.gz; \
+    tar --strip-components=1 -C /opt/karaf -xzf apache-karaf-2.4.0.tar.gz; \
+    rm apache-karaf-2.4.0.tar.gz; \
     mkdir /deploy; \
     sed -i 's/^\(felix\.fileinstall\.dir\s*=\s*\).*$/\1\/deploy/' /opt/karaf/etc/org.apache.felix.fileinstall-deploy.cfg
 
