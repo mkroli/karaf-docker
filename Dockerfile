@@ -1,6 +1,6 @@
-FROM dockerfile/java
+FROM java:openjdk-7
 MAINTAINER mkroli
-ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 RUN wget http://apache.openmirror.de/karaf/2.3.8/apache-karaf-2.3.8.tar.gz; \
     mkdir /opt/karaf; \
