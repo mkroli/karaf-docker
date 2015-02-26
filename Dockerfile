@@ -2,7 +2,6 @@ FROM java:openjdk-7
 MAINTAINER mkroli
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
-<<<<<<< HEAD
 RUN wget http://apache.openmirror.de/karaf/4.0.0.M2/apache-karaf-4.0.0.M2.tar.gz; \
     mkdir /opt/karaf; \
     tar --strip-components=1 -C /opt/karaf -xzf apache-karaf-4.0.0.M2.tar.gz; \
