@@ -2,10 +2,10 @@ FROM java:openjdk-7
 MAINTAINER mkroli
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
-RUN wget http://apache.openmirror.de/karaf/2.3.9/apache-karaf-2.3.9.tar.gz; \
+RUN wget http://apache.openmirror.de/karaf/2.3.10/apache-karaf-2.3.10.tar.gz; \
     mkdir /opt/karaf; \
-    tar --strip-components=1 -C /opt/karaf -xzf apache-karaf-2.3.9.tar.gz; \
-    rm apache-karaf-2.3.9.tar.gz; \
+    tar --strip-components=1 -C /opt/karaf -xzf apache-karaf-2.3.10.tar.gz; \
+    rm apache-karaf-2.3.10.tar.gz; \
     mkdir /deploy; \
     sed -i 's/^\(felix\.fileinstall\.dir\s*=\s*\).*$/\1\/deploy/' /opt/karaf/etc/org.apache.felix.fileinstall-deploy.cfg
 
