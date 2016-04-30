@@ -1,6 +1,6 @@
-FROM java:openjdk-7
+FROM java:8-jdk
 MAINTAINER mkroli
-ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 ENV KARAF_VERSION=3.0.6
 
