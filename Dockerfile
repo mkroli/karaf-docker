@@ -2,7 +2,7 @@ FROM java:8-jdk
 MAINTAINER mkroli
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
-ENV KARAF_VERSION=4.0.5
+ENV KARAF_VERSION=4.0.6
 
 RUN wget http://apache.openmirror.de/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz; \
     mkdir /opt/karaf; \
